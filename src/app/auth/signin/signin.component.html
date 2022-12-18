@@ -1,0 +1,16 @@
+<div class="auth-view">
+    <div class="auth-form enable" id="signin">
+        <div class="field-name">ログイン</div>
+        <label>ログインID</label>
+		<input type="text" id="loginId" value="haveabook.w@gmail.com">
+		<label>パスワード</label>
+		<input type="text" id="password" value="Test@test1">
+        <button type="button" (click)="signIn()">ログイン</button>
+    </div>
+	<div class="auth-form disable" id="new-password-init">
+        <div class="field-name">初回パスワード変更</div>
+		<label>パスワード</label>
+		<input type="text" id="newPassword" value="Test@test2">
+        <button type="button" (click)="completeNewPassword()">登録</button>
+    </div>
+</div>
